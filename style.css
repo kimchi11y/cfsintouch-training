@@ -11,11 +11,12 @@
 }
 
 * {
-* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
@@ -194,6 +195,27 @@ h3 {
 .clear-btn:active {
     transform: scale(0.98);
 }
+    
+.btn-letrun {
+    margin-top: 20px;
+}
+
+.btn-letrun a {
+    display: block;
+    text-align: center;
+    padding: 12px 24px;
+    background: #0b7285;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-letrun a:hover {
+    background: #095966;
+}
 
 @media (max-width: 640px) {
     .container {
@@ -217,5 +239,7 @@ h3 {
     .file-text {
         font-size: 1rem;
     }
+
+
 
 }
