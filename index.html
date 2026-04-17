@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spin the Wheel - Data Management</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Spin the Wheel - Data Manager</h1>
+        
+        <div class="upload-section">
+            <h2>Upload Names from CSV</h2>
+            <p class="instructions">Upload a CSV file with one name per line</p>
+            
+            <div class="file-input-wrapper">
+                <input type="file" id="csvFileInput" accept=".csv" />
+                <label for="csvFileInput" class="file-label">
+                    <span class="file-icon">📁</span>
+                    <span class="file-text">Choose CSV File</span>
+                </label>
+            </div>
+        </div>
+
+        <div id="message" class="message"></div>
+
+        <div class="data-section" id="dataSection" style="display: none;">
+            <h2>Loaded Names</h2>
+            <div class="stats">
+                <span class="count-label">Total names:</span>
+                <span id="nameCount" class="count-value">0</span>
+            </div>
+            
+            <div class="names-preview">
+                <h3>Preview:</h3>
+                <ul id="namesList"></ul>
+            </div>
+
+            <button id="clearBtn" class="clear-btn">Clear All Data</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
